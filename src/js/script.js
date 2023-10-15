@@ -126,12 +126,21 @@ function calculationCreditInfo() {
     const dailyRepayment = (la + la * (ir / 100) * rp) / rp;
     const sumDay = document.querySelector(".sum-day");
     console.log(sumDay);
-    sumDay.textContent = Math.round(dailyRepayment);
+    if (loanAmount.value.charAt(0) === "0") {
+        sumDay.textContent = "";
+        totalSum.textContent = "";
+    } else {
+        sumDay.textContent = Math.round(dailyRepayment);
+    }
     //Сума повного погашення
     const fullRepayment = dailyRepayment * rp;
     const totalSum = document.querySelector(".total-sum");
-    console.log(totalSum);
-    totalSum.textContent = Math.round(fullRepayment);
+    if (loanTerm.value.charAt(0) === "0") {
+        totalSum.textContent = "";
+        sumDay.textContent = "";
+    } else {
+        totalSum.textContent = Math.round(fullRepayment);
+    }
 }
 
 form.addEventListener("submit", (event) => {
