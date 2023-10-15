@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./dist/css/styles.min.css" />
+    </head>
+    <body class="body">
+        <main class="main">
+            <section class="credit">
+                <div class="credit__wrapper">
+                    <h1 class="credit__title">Кредитний калькулятор :</h1>
+                    <form class="credit__form form">
+                        <div class="form__wrapper">
+                            <label for="loanAmount" class="loan"
+                                >Сума кредиту :</label
+                            >
+                            <input
+                                class="loan__numb"
+                                type="number"
+                                id="loanAmount"
+                                step="100"
+                                min="1000"
+                                max="50000"
+                                value="1000"
+                            />
+                            <input
+                                class="loan__slider"
+                                type="range"
+                                id="loanAmountSlider"
+                                step="100"
+                                min="1000"
+                                max="50000"
+                                value="1000"
+                            />
+                            <span id="loanAmountValue">1000</span>
+                        </div>
+                        <div class="form__wrapper">
+                            <label for="loanTerm" class="loan"
+                                >Період погашення :</label
+                            >
+                            <input
+                                class="loan__numb"
+                                type="number"
+                                id="loanTerm"
+                                step="1"
+                                min="7"
+                                max="60"
+                                value="7"
+                            />
+                            <input
+                                class="loan__slider"
+                                type="range"
+                                id="loanTermSlider"
+                                step="1"
+                                min="7"
+                                max="60"
+                                value="7"
+                            />
+                            <span id="loanTermValue">7</span>
+                        </div>
+                        <div class="loan__sum">
+                            <button class="form__btn" type="submit">
+                                Отримати кредит
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <script src="./dist/js/scripts.min.js"></script>
+    </body>
+</html>

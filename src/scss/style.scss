@@ -1,0 +1,95 @@
+@import "./normalize.scss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+
+.credit {
+    background-image: url("../img/bckg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.credit__wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.credit__title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0.15px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.form__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.loan__numb {
+    margin-top: 15px;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    margin-right: 10px;
+    background-color: bisque;
+    border-radius: 4px;
+}
+
+.loan__numb:hover {
+    background-color: yellow;
+}
+
+.loanAmountError {
+    margin-left: 20px;
+}
+
+.loanTermError {
+    margin-left: 20px;
+}
+
+.loan__slider {
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.loan {
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.loanAmountError {
+    color: red;
+}
+
+.loanTermError {
+    color: red;
+}
+
+.form__btn {
+    border: none;
+    border-radius: 4px;
+    padding: 15px 30px;
+    background-color: bisque;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.dataEmpty {
+    color: red;
+}
+
+.loan__sum {
+    text-align: center;
+}
+
+.form__btn {
+    cursor: pointer;
+}
